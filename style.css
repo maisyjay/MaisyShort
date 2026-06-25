@@ -1,0 +1,268 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background: white;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 20px 60px;
+    z-index: 1000;
+}
+
+.nav-left {
+    justify-self: start;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-logo {
+    justify-self: center;
+}
+
+.nav-right {
+    justify-self: end;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 20px !important;
+    font-weight: 900;
+    letter-spacing: 10px !important;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover {
+    opacity: 0.5;
+}
+
+/* GLOBAL TITLE STYLE */
+h1 {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 7px;
+    font-weight: 300;
+    margin-top: 140px;
+    margin-bottom: 60px;
+}
+
+/* OPTIONAL: navbar spacing helper */
+.has-navbar {
+    padding-top: 100px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("Images/CDG screenshot.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ENTER BUTTON */
+.enter-button {
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid white;
+    padding: 20px 90px;
+
+    font-size: 12px;
+    letter-spacing: 6px;
+
+    transition: 0.3s ease;
+}
+
+.enter-button:hover {
+    background: white;
+    color: black;
+}
+
+/* GALLERY */
+.gallery {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto 160px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+
+    grid-auto-flow: row;
+}
+
+
+
+/* MEDIA (images + videos) */
+.gallery img,
+.gallery video {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+}
+
+/* OPTIONAL: make a “full width” item when needed */
+.gallery-item.full {
+    grid-column: 1 / -1;
+}
+
+/* Gallery item spacing consistency */
+.gallery-item p {
+    margin-top: 15px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+/* VIDEO WRAPPER */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.video-item {
+    grid-column: 1 / -1;
+}
+
+/* Make video fill wrapper properly */
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SOUND LABEL */
+#soundLabel {
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    background: rgba(255,255,255,0.8);
+    padding: 8px 12px;
+
+    pointer-events: none;
+}
+
+/* CAPTION */
+.caption {
+    margin-top: 15px;
+    text-align: center;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* ABOUT PAGE */
+.about {
+    width: 80%;
+    margin: 140px auto 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+/* ABOUT IMAGE */
+.about-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ABOUT TEXT */
+.about-text h1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.contact {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+    transition: 0.3s ease;
+}
+
+.contact a:hover {
+    opacity: 0.5;
+}
